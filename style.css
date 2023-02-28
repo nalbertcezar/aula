@@ -1,0 +1,68 @@
+:root {
+    --primarycolor: #fdd4b8;
+    --secondarycolor: #fb8e99;
+    --terciarycolor: #b35f6e;
+}
+
+body {
+    background-color: var(--primarycolor);
+    height: 100vh;
+    font-family: 'VT323', monospace;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondarycolor);
+    width: 35%;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid var(--terciarycolor);
+    border-radius: 10px;
+}
+
+span {
+    font-size: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+label {
+    margin: 10px 0 3px 0;  
+    width: 100%;
+    font-size: 20px;  
+}
+
+input {
+    border: 2px solid var(--terciarycolor);
+    border-radius: 10px;
+    padding: 4px;
+    width: 100%;   
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--primarycolor);
+}
+
+#submit {
+    margin: 30px 0 20px 0;
+    padding: 5px;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+    transition: 500ms ease;
+}
+
+#submit:hover {
+    scale: 1.01;
+    border: 2px solid var(--primarycolor);
+    color: var(--terciarycolor);
+}
